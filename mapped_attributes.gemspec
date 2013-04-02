@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = MappedAttributes::VERSION
   gem.authors       = ["Tomasz Borowski [tbprojects]"]
   gem.email         = 'info.tbprojects@gmail.com'
-  gem.description   = "This gem allows to build ActiveRecord objects with alternative attribute naming"
-  gem.summary       = "This gem allows to build ActiveRecord objects with alternative attribute naming"
+  gem.description   = "Allows to build ActiveRecord objects with alternative attribute naming"
+  gem.summary       = "Allows to build ActiveRecord objects with alternative attribute naming"
   gem.homepage      = "https://github.com/tbprojects/mapped_attributes"
 
   gem.files         = `git ls-files`.split("\n")
@@ -18,6 +18,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency 'rake'
-  gem.add_runtime_dependency 'activerecord'
-  gem.add_runtime_dependency 'i18n'
+  gem.add_development_dependency 'rails'
+  gem.add_development_dependency 'sqlite3'
+  gem.add_dependency 'activerecord'
+  gem.add_dependency 'i18n'
 end

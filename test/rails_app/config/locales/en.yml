@@ -1,0 +1,24 @@
+en:
+  activerecord:
+    mappings:
+      project:
+        subject: Project Name
+        summary: Description
+        priority: Importance
+        start_at: Beginning
+        main_task_attributes:
+          name: Task Name
+          description: Info
+          due_date: Deadline
+      custom_project:
+        subject: Project Label
+        main_task_attributes:
+                  name: Main Task
+      multiple_mapping_project:
+        subject:
+          - Project Name
+          - Work Name
+        main_task_attributes:
+          name:
+            - Task Name
+            - Subwork Name
