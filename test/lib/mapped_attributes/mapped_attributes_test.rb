@@ -2,8 +2,6 @@ require_relative '../../test_helper'
 
 describe MappedAttributes do
 
-  Project.send(:include, MappedAttributes)
-
   it "responds to set_mapped_attributes" do
     Project.new.respond_to?(:set_mapped_attributes).must_equal true
   end

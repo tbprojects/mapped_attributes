@@ -1,4 +1,7 @@
 class Project < ActiveRecord::Base
+
+  include MappedAttributes
+
   has_many :tasks
   has_one :main_task, class_name: 'Task', order: 'priority ASC'
   accepts_nested_attributes_for :main_task
